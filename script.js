@@ -134,9 +134,9 @@ class App extends React.Component {
       React.createElement("h1", { id: "display", class: "padName" }, this.state.display),
       React.createElement(DrumPads, { soundBank: this.state.soundBank, updateDisplay: this.updateDisplay })),
 
-      React.createElement("div", { class: "footer" }, "by",
+      React.createElement("div", { class: "footer" }, "by ",
 
-      React.createElement("a", { href: "https://codepen.io/Busterfreeze/" }, " Busterfreez"))));
+      React.createElement("a", { href: "https://codepen.io/Busterfreeze/" }, "Zac L."))));
 
 
 
