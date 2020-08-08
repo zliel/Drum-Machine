@@ -1,5 +1,3 @@
-//A lot of this code was at the very least heavily inspired by the example given by freeCodeCamp @ https://codepen.io/freeCodeCamp/full/MJyNMd
-
 let soundBank = [{
   key: "Q",
   keyCode: 81,
@@ -83,9 +81,6 @@ class Pads extends React.Component {
       React.createElement("div", { id: this.props.id, onClick: this.playSound, className: "drum-pad btn btn-default" },
       this.props.keyName,
       React.createElement("audio", { className: "clip", id: this.props.keyName, src: this.props.url })));
-
-
-
   }}
 
 
@@ -108,10 +103,8 @@ class DrumPads extends React.Component {
     return (
       React.createElement("div", null,
       bank));
-
-
+    
   }}
-
 
 class App extends React.Component {
   constructor(props) {
@@ -138,10 +131,6 @@ class App extends React.Component {
 
       React.createElement("a", { href: "https://codepen.io/Busterfreeze/" }, "Zac L."))));
 
-
-
-
   }}
-
 
 ReactDOM.render(React.createElement(App, null), document.getElementById("root"));
